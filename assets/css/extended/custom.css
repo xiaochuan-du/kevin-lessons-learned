@@ -1,0 +1,63 @@
+:root {
+  --main-width: 760px;
+  --nav-width: 1080px;
+  --gap: 26px;
+}
+
+body {
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.logo a {
+  letter-spacing: -0.025em;
+}
+
+.home-info .entry-header h1 {
+  max-width: 18ch;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.home-info .entry-content {
+  max-width: 62ch;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.post-content {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-size: 1.075rem;
+  line-height: 1.8;
+}
+
+.post-content h2,
+.post-content h3,
+.post-title {
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.post-content blockquote {
+  border-inline-start-width: 3px;
+  font-style: normal;
+}
+
+:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (max-width: 680px) {
+  :root {
+    --gap: 20px;
+  }
+
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+}

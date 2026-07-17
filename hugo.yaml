@@ -1,0 +1,119 @@
+baseURL: "https://example.github.io/kevin-lessons-learned/"
+locale: "en_AU"
+title: "Kevin's Lessons Learned"
+theme: ["PaperMod"]
+timeZone: "Australia/Melbourne"
+
+enableRobotsTXT: true
+enableGitInfo: false
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+ignoreLogs: ["warning-partial-superfluous-prefix"]
+
+pagination:
+  pagerSize: 10
+
+permalinks:
+  posts: "/posts/:year/:month/:slug/"
+
+taxonomies:
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+caches:
+  images:
+    dir: ":cacheDir/images"
+
+markup:
+  highlight:
+    noClasses: false
+    lineNos: false
+  goldmark:
+    renderer:
+      unsafe: false
+
+params:
+  env: production
+  title: "Kevin's Lessons Learned"
+  description: "Notes, experiments, and explanations from learning in public."
+  author: "Kevin"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  showtoc: true
+  tocopen: false
+  comments: false
+  hideSummary: false
+  DateFormat: "2 January 2006"
+
+  # A non-empty map keeps PaperMod v8.0 away from Hugo's removed site.Social API.
+  social:
+    facebook_admin: ""
+    twitter: ""
+
+  homeInfoParams:
+    Title: "Learning, one useful note at a time."
+    Content: >-
+      I use this site to turn things I am learning into durable notes and clear
+      explanations. The work starts in GitHub Issues and becomes a post when it
+      is ready to share.
+
+  editPost:
+    # GitHub Actions supplies the repository-specific URL at build time.
+    URL: ""
+    Text: "Suggest changes"
+    appendFilePath: true
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 2
+    limit: 20
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: posts/
+      weight: 10
+    - identifier: archives
+      name: Archive
+      url: archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: search/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: tags/
+      weight: 40
+    - identifier: about
+      name: About
+      url: about/
+      weight: 50

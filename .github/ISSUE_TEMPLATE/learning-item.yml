@@ -1,0 +1,49 @@
+name: Learning item
+description: Track a question or skill to investigate and practise.
+title: "[Learn] "
+labels: ["type: learning", "status: backlog"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What do I want to learn?
+      description: State the question or skill precisely enough to know when it is answered.
+      placeholder: How does…?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why does this matter?
+      description: Describe the project, decision, or curiosity behind the topic.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Define what you should be able to explain, decide, or build afterward.
+      placeholder: "I will be able to…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Starting resources
+      description: Add promising primary sources, documentation, papers, examples, or experiments.
+      placeholder: "- https://…"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: done
+    attributes:
+      label: Completion checklist
+      options:
+        - label: I can explain the central idea in my own words.
+        - label: I tested the idea with an example or practical exercise.
+        - label: I recorded sources and remaining uncertainty.
+        - label: I decided whether this should become a writing item.

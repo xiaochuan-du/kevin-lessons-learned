@@ -1,0 +1,39 @@
+name: Validate site
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.164.0
+      HUGO_PARAMS_EDITPOST_URL: "https://github.com/${{ github.repository }}/edit/main/content"
+      TZ: Australia/Melbourne
+    steps:
+      - name: Checkout source and theme
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Hugo
+        shell: bash
+        run: |
+          curl -fsSLo "${RUNNER_TEMP}/hugo.tar.gz" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
+          tar -xzf "${RUNNER_TEMP}/hugo.tar.gz" -C "${RUNNER_TEMP}" hugo
+          echo "${RUNNER_TEMP}" >> "${GITHUB_PATH}"
+
+      - name: Build drafts for review
+        run: >-
+          hugo build
+          --gc
+          --minify
+          --buildDrafts
+          --baseURL "https://example.github.io/repository/"
+          --cacheDir "${RUNNER_TEMP}/hugo_cache"

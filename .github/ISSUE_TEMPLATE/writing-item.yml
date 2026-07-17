@@ -1,0 +1,65 @@
+name: Writing item
+description: Plan a learning note or article for publication.
+title: "[Write] "
+labels: ["type: post", "status: backlog"]
+body:
+  - type: textarea
+    id: thesis
+    attributes:
+      label: Thesis or reader promise
+      description: State the main idea or what the reader will understand after the post.
+      placeholder: "After reading this, you will understand…"
+    validations:
+      required: true
+
+  - type: input
+    id: audience
+    attributes:
+      label: Intended audience
+      description: Name the reader and the knowledge they can already be expected to have.
+      placeholder: Developers new to…
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Working outline
+      description: List the major sections and the progression of the argument.
+      placeholder: |
+        1. The problem
+        2. The core idea
+        3. A worked example
+        4. Limits and takeaways
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and evidence
+      description: Prefer primary sources and note which claims each source supports.
+      placeholder: "- https://… — supports…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related learning issues
+      description: Link the learning issues that led to this writing item.
+      placeholder: "- #123"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: publication
+    attributes:
+      label: Publication checklist
+      options:
+        - label: The opening states the problem and reader promise.
+        - label: Important claims are supported by primary sources.
+        - label: Examples, code, and links have been checked.
+        - label: Images have useful alt text and permission to publish.
+        - label: The post was previewed locally on desktop and mobile.
+        - label: The post is marked draft false only when ready to publish.
