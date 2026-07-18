@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 920" width="1200" height="920" role="img" aria-labelledby="title desc">
+  <title id="title">How to diagnose AI performance degradation without forcing one cause</title>
+  <desc id="desc">After a performance alert, confirm severity and contain high-consequence risk. Check the measurement pipeline, population, inference system, blinded relabelling and outcome evidence in parallel. Classify one or more causes, remediate and validate, then explicitly reauthorise or roll back.</desc>
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 25px; font-weight: 600; fill: #111827; }
+    .subtitle { font-size: 14px; fill: #6b7280; }
+    .label { font-size: 16px; font-weight: 600; fill: #111827; }
+    .detail { font-size: 12px; fill: #4b5563; }
+    .group { font-size: 14px; font-weight: 600; fill: #374151; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="920" fill="#ffffff"/>
+  <text x="600" y="38" text-anchor="middle" class="title">Diagnose degradation without forcing one cause</text>
+  <text x="600" y="64" text-anchor="middle" class="subtitle">Measurement, population, inference and pipeline failures can occur together.</text>
+
+  <rect x="430" y="88" width="340" height="66" rx="32" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="600" y="118" text-anchor="middle" class="label">Performance alert</text>
+  <text x="600" y="140" text-anchor="middle" class="detail">A predeclared business, risk or assurance trigger fires</text>
+
+  <path d="M600 154 V190" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <rect x="350" y="190" width="500" height="94" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="600" y="221" text-anchor="middle" class="label">Confirm severity and contain</text>
+  <text x="600" y="247" text-anchor="middle" class="detail">Check that the change is material; reduce authority or restore approval</text>
+  <text x="600" y="269" text-anchor="middle" class="detail">immediately when the potential consequence is high</text>
+
+  <path d="M600 284 V322" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="600" y="318" text-anchor="middle" class="group">Run checks in parallel</text>
+
+  <rect x="28" y="342" width="220" height="124" rx="9" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1.5"/>
+  <text x="138" y="374" text-anchor="middle" class="label">Measurement plumbing</text>
+  <text x="138" y="400" text-anchor="middle" class="detail">Telemetry and metric code</text>
+  <text x="138" y="422" text-anchor="middle" class="detail">Lineage and label delay</text>
+  <text x="138" y="444" text-anchor="middle" class="detail">Recent configuration changes</text>
+
+  <rect x="259" y="342" width="220" height="124" rx="9" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="369" y="374" text-anchor="middle" class="label">Population and segments</text>
+  <text x="369" y="400" text-anchor="middle" class="detail">Case mix and data source</text>
+  <text x="369" y="422" text-anchor="middle" class="detail">Reviewer cohort and policy</text>
+  <text x="369" y="444" text-anchor="middle" class="detail">Difficulty and time period</text>
+
+  <rect x="490" y="342" width="220" height="124" rx="9" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="600" y="374" text-anchor="middle" class="label">Inference system</text>
+  <text x="600" y="400" text-anchor="middle" class="detail">Model and feature changes</text>
+  <text x="600" y="422" text-anchor="middle" class="detail">Prompts, rules and tools</text>
+  <text x="600" y="444" text-anchor="middle" class="detail">Retrieval and serving behaviour</text>
+
+  <rect x="721" y="342" width="220" height="124" rx="9" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="831" y="374" text-anchor="middle" class="label">Blinded relabelling</text>
+  <text x="831" y="400" text-anchor="middle" class="detail">Paired audit on the same cases</text>
+  <text x="831" y="422" text-anchor="middle" class="detail">Representative segments</text>
+  <text x="831" y="444" text-anchor="middle" class="detail">Independent reviewers</text>
+
+  <rect x="952" y="342" width="220" height="124" rx="9" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
+  <text x="1062" y="374" text-anchor="middle" class="label">Outcome evidence</text>
+  <text x="1062" y="400" text-anchor="middle" class="detail">Verified events when available</text>
+  <text x="1062" y="422" text-anchor="middle" class="detail">Operational consequences</text>
+  <text x="1062" y="444" text-anchor="middle" class="detail">Delay and selection effects</text>
+
+  <path d="M600 322 H138 V342 M600 322 H369 V342 M600 322 V342 M600 322 H831 V342 M600 322 H1062 V342" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <path d="M138 466 V516 M369 466 V516 M600 466 V516 M831 466 V516 M1062 466 V516 M138 516 H1062" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <path d="M600 516 V554" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <rect x="320" y="554" width="560" height="122" rx="10" fill="#ffffff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="600" y="586" text-anchor="middle" class="label">Classify one or more causes</text>
+  <text x="600" y="614" text-anchor="middle" class="detail">Measurement or reference drift • population or sample shift</text>
+  <text x="600" y="638" text-anchor="middle" class="detail">inference-system change • monitoring or pipeline failure</text>
+  <text x="600" y="660" text-anchor="middle" class="detail">Do not force a single explanation when the evidence supports several.</text>
+
+  <path d="M600 676 V716" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <rect x="350" y="716" width="500" height="92" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="600" y="747" text-anchor="middle" class="label">Remediate and validate</text>
+  <text x="600" y="773" text-anchor="middle" class="detail">Fix the affected layers; dual-score old and new policy on a bridge set</text>
+  <text x="600" y="795" text-anchor="middle" class="detail">Confirm the segment gate passes and keep rollback available</text>
+
+  <path d="M600 808 V842" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <rect x="350" y="842" width="500" height="58" rx="28" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="600" y="877" text-anchor="middle" class="label">Explicitly reauthorise, limit or roll back</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" role="img" aria-labelledby="title desc">
+  <title id="title">What moves reported AI performance and the resulting decision?</title>
+  <desc id="desc">The inference system, evaluation population, human measurement system and monitoring pipeline produce reported performance. Downstream outcome signals provide additional evidence. Together they inform decisions about value, risk and system authority.</desc>
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 25px; font-weight: 600; fill: #111827; }
+    .subtitle { font-size: 14px; fill: #6b7280; }
+    .label { font-size: 17px; font-weight: 600; fill: #111827; }
+    .detail { font-size: 13px; fill: #4b5563; }
+    .legend { font-size: 12px; fill: #6b7280; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <text x="600" y="38" text-anchor="middle" class="title">What moves reported AI performance?</text>
+  <text x="600" y="64" text-anchor="middle" class="subtitle">Four systems shape the readout; later outcomes test whether it supports the real decision.</text>
+
+  <rect x="30" y="100" width="260" height="112" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="160" y="132" text-anchor="middle" class="label">Inference system</text>
+  <text x="160" y="158" text-anchor="middle" class="detail">Models, features, rules and prompts</text>
+  <text x="160" y="181" text-anchor="middle" class="detail">Retrieval, tools, policy and serving</text>
+
+  <rect x="320" y="100" width="260" height="112" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="450" y="132" text-anchor="middle" class="label">Evaluation population</text>
+  <text x="450" y="158" text-anchor="middle" class="detail">Segments, severity and sources</text>
+  <text x="450" y="181" text-anchor="middle" class="detail">Case mix, difficulty and time period</text>
+
+  <rect x="610" y="100" width="260" height="112" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="740" y="132" text-anchor="middle" class="label">Human measurement</text>
+  <text x="740" y="158" text-anchor="middle" class="detail">Workforce mix, guidance and context</text>
+  <text x="740" y="181" text-anchor="middle" class="detail">Independent review and adjudication</text>
+
+  <rect x="900" y="100" width="260" height="112" rx="10" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1.5"/>
+  <text x="1030" y="132" text-anchor="middle" class="label">Monitoring pipeline</text>
+  <text x="1030" y="158" text-anchor="middle" class="detail">Telemetry, metric code and lineage</text>
+  <text x="1030" y="181" text-anchor="middle" class="detail">Label delay and configuration</text>
+
+  <path d="M160 212 V258 M450 212 V258 M740 212 V258 M1030 212 V258 M160 258 H1030" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <path d="M600 258 V300" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <rect x="410" y="300" width="380" height="112" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="600" y="338" text-anchor="middle" class="label">Reported performance</text>
+  <text x="600" y="365" text-anchor="middle" class="detail">Label-based metrics, segments and uncertainty</text>
+  <text x="600" y="389" text-anchor="middle" class="detail">The evidence available now</text>
+
+  <rect x="70" y="492" width="360" height="104" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="250" y="526" text-anchor="middle" class="label">Downstream outcome signals</text>
+  <text x="250" y="553" text-anchor="middle" class="detail">Verified events and operational impact</text>
+  <text x="250" y="576" text-anchor="middle" class="detail">Delayed and incomplete, but closer to the objective</text>
+
+  <rect x="790" y="472" width="350" height="136" rx="12" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
+  <text x="965" y="510" text-anchor="middle" class="label">Value, risk and authority decision</text>
+  <text x="965" y="539" text-anchor="middle" class="detail">Expand, limit, require approval or roll back</text>
+  <text x="965" y="563" text-anchor="middle" class="detail">Decide by segment and expected consequence</text>
+  <text x="965" y="587" text-anchor="middle" class="detail">Reauthorise only when the evidence passes</text>
+
+  <path d="M600 412 V500 H790" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+  <path d="M430 544 H610 V568 H790" fill="none" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+
+  <g transform="translate(385 648)">
+    <line x1="0" y1="0" x2="34" y2="0" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+    <text x="44" y="4" class="legend">Current evaluation evidence</text>
+    <line x1="260" y1="0" x2="294" y2="0" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+    <text x="304" y="4" class="legend">Downstream outcome evidence</text>
+  </g>
+</svg>
