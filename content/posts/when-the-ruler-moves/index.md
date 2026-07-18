@@ -1,7 +1,7 @@
 ---
 title: "When the ruler moves: what inconsistent labels taught me about AI performance"
-date: 2026-07-18T12:00:00+10:00
-draft: true
+date: 2026-07-18T10:50:00+10:00
+draft: false
 description: "A practical approach to label consistency, human-level performance and AI monitoring, drawn from an evaluation where the model score moved with the labelling process."
 tags: ["ai", "machine-learning", "evaluation", "data-quality", "monitoring"]
 ---
