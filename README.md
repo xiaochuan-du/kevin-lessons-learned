@@ -5,6 +5,8 @@ GitHub Issues, develop through research and practice, and become Markdown posts
 reviewed in pull requests. Merging a publishable post into `main` deploys it to
 GitHub Pages.
 
+Read the published blog at [Kevin's Lessons Learned](https://xiaochuan-du.github.io/kevin-lessons-learned/).
+
 The site uses [Hugo](https://gohugo.io/) and the
 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. The generated
 website is not stored in Git; GitHub Actions builds it from the source files.
