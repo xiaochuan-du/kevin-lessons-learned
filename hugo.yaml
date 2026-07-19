@@ -80,7 +80,19 @@ params:
     Content: >-
       I use this site to turn things I am learning into durable notes and clear
       explanations. The work starts in GitHub Issues and becomes a post when it
-      is ready to share.
+      is ready to share. Feel free to [open an issue](https://github.com/xiaochuan-du/kevin-lessons-learned/issues/new)
+      to chat about anything in the blog.
+
+  socialIcons:
+    - name: linkedin
+      title: LinkedIn
+      url: "https://www.linkedin.com/in/kevin-du-837812a8/"
+    - name: x
+      title: X
+      url: "https://x.com/Kevin_Duu"
+    - name: github
+      title: GitHub
+      url: "https://github.com/xiaochuan-du/kevin-lessons-learned"
 
   editPost:
     # GitHub Actions supplies the repository-specific URL at build time.
@@ -121,7 +133,11 @@ menu:
       name: Tags
       url: tags/
       weight: 40
+    - identifier: faq
+      name: FAQ
+      url: faq/
+      weight: 50
     - identifier: about
       name: About
       url: about/
-      weight: 50
+      weight: 60

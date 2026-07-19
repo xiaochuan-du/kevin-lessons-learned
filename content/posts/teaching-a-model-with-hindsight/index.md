@@ -1,7 +1,7 @@
 ---
 title: "Teaching a deployable model with hindsight"
 date: 2026-07-18T16:30:00+10:00
-draft: true
+draft: false
 math: true
 description: "How I used post-event evidence, richer labels and weighted training to turn a small human-labelled dataset into a stronger deployable binary classifier."
 tags: ["machine-learning", "semi-supervised-learning", "knowledge-distillation", "data-quality", "risk"]
