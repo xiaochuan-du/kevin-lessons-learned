@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" width="1440" height="720" role="img" aria-labelledby="title desc">
+  <title id="title">Privileged teacher and deployable student on two clocks</title>
+  <desc id="desc">Training gold labels and mature history train a privileged teacher. The teacher creates expanded subtype supervision for a student that learns only from decision-time features. In the original system, fresh human labels were compared with teacher predictions to investigate changes and guide improvements. At serving time, the deployed student receives no post-event features and returns a binary result.</desc>
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .title { font-size: 26px; font-weight: 700; fill: #111827; }
+    .subtitle { font-size: 14px; fill: #6b7280; }
+    .section { font-size: 14px; font-weight: 700; fill: #374151; letter-spacing: .5px; }
+    .node-title { font-size: 17px; font-weight: 700; fill: #111827; }
+    .body { font-size: 13px; fill: #4b5563; }
+    .small { font-size: 12px; fill: #6b7280; }
+    .label { font-size: 12px; font-weight: 600; }
+  </style>
+  <defs>
+    <marker id="blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
+    <marker id="purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#9333ea"/></marker>
+    <marker id="green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#16a34a"/></marker>
+    <marker id="orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#ea580c"/></marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#111827" flood-opacity=".10"/></filter>
+  </defs>
+
+  <rect width="1440" height="720" fill="#fff"/>
+  <text class="title" x="40" y="42">Privileged teacher and deployable student on two clocks</text>
+  <text class="subtitle" x="40" y="68">Hindsight expands supervision; fresh human labels monitor the delayed teacher.</text>
+
+  <rect x="30" y="96" width="1110" height="575" rx="14" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text class="section" x="52" y="124">TRAINING &amp; DELAYED MONITORING</text>
+  <rect x="1160" y="96" width="250" height="575" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text class="section" x="1182" y="124">SERVING TIME</text>
+
+  <rect x="60" y="165" width="210" height="115" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text class="node-title" x="86" y="202">Training gold labels</text>
+  <text class="body" x="86" y="231">Human-labelled subtypes</text>
+  <text class="small" x="86" y="255">Approve · conditional · definitive</text>
+
+  <rect x="60" y="330" width="210" height="115" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text class="node-title" x="86" y="367">Mature history</text>
+  <text class="body" x="86" y="396">Decision-time features x</text>
+  <text class="body" x="86" y="420">Post-event features z</text>
+
+  <rect x="345" y="225" width="220" height="155" rx="12" fill="#faf5ff" stroke="#c4b5fd" stroke-width="2" filter="url(#shadow)"/>
+  <text class="node-title" x="455" y="266" text-anchor="middle">Privileged teacher</text>
+  <text class="body" x="455" y="302" text-anchor="middle">Learns richer subtypes</text>
+  <text class="body" x="455" y="328" text-anchor="middle">Uses x + delayed z</text>
+  <text class="small" x="455" y="357" text-anchor="middle">Runs after evidence matures</text>
+
+  <path d="M270 222 H330" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#blue)"/>
+  <text class="label" x="300" y="211" text-anchor="middle" fill="#2563eb">train</text>
+  <path d="M270 388 H310 V342 H330" stroke="#16a34a" stroke-width="2.5" fill="none" marker-end="url(#green)"/>
+  <text class="label" x="297" y="378" text-anchor="middle" fill="#16a34a">x + z</text>
+
+  <rect x="640" y="215" width="220" height="175" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text class="node-title" x="750" y="257" text-anchor="middle">Expanded supervision</text>
+  <text class="body" x="750" y="294" text-anchor="middle">Larger mature population</text>
+  <text class="body" x="750" y="320" text-anchor="middle">Teacher-generated subtypes</text>
+  <text class="small" x="750" y="352" text-anchor="middle">Severity retained for training</text>
+  <path d="M565 302 H625" stroke="#9333ea" stroke-width="2.5" fill="none" marker-end="url(#purple)"/>
+  <text class="label" x="595" y="291" text-anchor="middle" fill="#9333ea">score</text>
+
+  <rect x="930" y="235" width="155" height="135" rx="12" fill="#eff6ff" stroke="#60a5fa" stroke-width="2" filter="url(#shadow)"/>
+  <text class="node-title" x="1008" y="278" text-anchor="middle">Student</text>
+  <text class="body" x="1008" y="312" text-anchor="middle">Learns from x only</text>
+  <text class="small" x="1008" y="340" text-anchor="middle">Binary target</text>
+  <path d="M860 302 H915" stroke="#9333ea" stroke-width="2.5" fill="none" marker-end="url(#purple)"/>
+  <text class="label" x="888" y="291" text-anchor="middle" fill="#9333ea">train</text>
+
+  <rect x="1190" y="180" width="190" height="105" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="node-title" x="1285" y="220" text-anchor="middle">New case</text>
+  <text class="body" x="1285" y="250" text-anchor="middle">Decision-time x</text>
+  <rect x="1190" y="340" width="190" height="125" rx="10" fill="#eff6ff" stroke="#60a5fa" stroke-width="2" filter="url(#shadow)"/>
+  <text class="node-title" x="1285" y="382" text-anchor="middle">Deployed student</text>
+  <text class="body" x="1285" y="416" text-anchor="middle">No post-event features</text>
+  <text class="small" x="1285" y="444" text-anchor="middle">Returns a binary result</text>
+  <path d="M1085 302 H1130 V402 H1175" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#blue)"/>
+  <text class="label" x="1125" y="291" text-anchor="middle" fill="#2563eb">deploy</text>
+  <path d="M1285 285 V325" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#blue)"/>
+
+  <line x1="60" y1="485" x2="1105" y2="485" stroke="#d1d5db" stroke-width="1.5"/>
+  <text class="section" x="60" y="514">MONITORING USED IN THE ORIGINAL SYSTEM</text>
+  <rect x="60" y="540" width="235" height="90" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text class="node-title" x="178" y="575" text-anchor="middle">Fresh human labels</text>
+  <text class="small" x="178" y="603" text-anchor="middle">Monitor teacher performance</text>
+  <rect x="405" y="540" width="235" height="90" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text class="node-title" x="523" y="575" text-anchor="middle">Compare with teacher</text>
+  <text class="small" x="523" y="603" text-anchor="middle">Subtype · segment · time</text>
+  <rect x="750" y="540" width="300" height="90" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text class="node-title" x="900" y="575" text-anchor="middle">Investigate patterns</text>
+  <text class="small" x="900" y="603" text-anchor="middle">Annotation · population · feature gaps</text>
+  <path d="M295 585 H390" stroke="#ea580c" stroke-width="2.3" fill="none" marker-end="url(#orange)"/>
+  <path d="M640 585 H735" stroke="#ea580c" stroke-width="2.3" fill="none" marker-end="url(#orange)"/>
+  <path d="M900 540 V460 H455 V395" stroke="#ea580c" stroke-width="2.3" stroke-dasharray="7 5" fill="none" marker-end="url(#orange)"/>
+  <text class="label" x="677" y="450" text-anchor="middle" fill="#ea580c">diagnostic feedback</text>
+
+  <text class="subtitle" x="40" y="700">Underwriting is illustrative; the architecture and internal performance observations come from another domain.</text>
+</svg>

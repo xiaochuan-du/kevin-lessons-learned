@@ -39,6 +39,14 @@ markup:
     noClasses: false
     lineNos: false
   goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['\[', '\]']
+          inline:
+            - ['\(', '\)']
     renderer:
       unsafe: false
 
