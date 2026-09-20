@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1140" width="1200" height="1140">
+  <style>
+    text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .title { font-size: 28px; font-weight: 700; fill: #111827; }
+    .phase { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; }
+    .node-title { font-size: 17px; font-weight: 650; fill: #111827; }
+    .node-detail { font-size: 13px; fill: #6b7280; }
+    .note-title { font-size: 14px; font-weight: 700; fill: #166534; }
+    .note { font-size: 13px; fill: #374151; }
+    .legend { font-size: 12px; fill: #6b7280; }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#111827" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1140" fill="#ffffff"/>
+  <text x="600" y="48" text-anchor="middle" class="title">Discriminative Prompt Discovery</text>
+
+  <rect x="100" y="82" width="1000" height="558" rx="14" fill="#eff6ff" fill-opacity="0.7" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="126" y="112" class="phase" fill="#1d4ed8">DISCOVERY</text>
+  <text x="238" y="112" class="node-detail">Explore freely and form a testable hypothesis</text>
+
+  <path d="M 600 178 L 600 210" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M 600 268 L 600 300" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M 600 358 L 600 390" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M 600 448 L 600 480" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M 600 538 L 600 570" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="350" y="120" width="500" height="58" rx="9" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="149" r="17" fill="#dbeafe"/>
+  <text x="382" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#1d4ed8">1</text>
+  <text x="415" y="145" class="node-title">Define the domain requirements</text>
+  <text x="415" y="164" class="node-detail">Name the capabilities and real operating constraints</text>
+
+  <rect x="350" y="210" width="500" height="58" rx="9" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="239" r="17" fill="#dbeafe"/>
+  <text x="382" y="245" text-anchor="middle" font-size="17" font-weight="700" fill="#1d4ed8">2</text>
+  <text x="415" y="235" class="node-title">Use production evidence first</text>
+  <text x="415" y="254" class="node-detail">Use approved synthetic cases for restricted access or missing coverage</text>
+
+  <rect x="350" y="300" width="500" height="58" rx="9" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="329" r="17" fill="#dbeafe"/>
+  <text x="382" y="335" text-anchor="middle" font-size="17" font-weight="700" fill="#1d4ed8">3</text>
+  <text x="415" y="325" class="node-title">Run the candidate models</text>
+  <text x="415" y="344" class="node-detail">Hold prompts, settings and budgets comparable</text>
+
+  <rect x="350" y="390" width="500" height="58" rx="9" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="419" r="17" fill="#dbeafe"/>
+  <text x="382" y="425" text-anchor="middle" font-size="17" font-weight="700" fill="#1d4ed8">4</text>
+  <text x="415" y="415" class="node-title">Check realism and stable differences</text>
+  <text x="415" y="434" class="node-detail">Require domain validity before scoring model separation</text>
+
+  <rect x="350" y="480" width="500" height="58" rx="9" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="509" r="17" fill="#ede9fe"/>
+  <text x="382" y="515" text-anchor="middle" font-size="17" font-weight="700" fill="#6d28d9">5</text>
+  <text x="415" y="505" class="node-title">Create contrast sets</text>
+  <text x="415" y="524" class="node-detail">Change one meaningful feature at a time</text>
+
+  <path d="M 850 509 C 980 509, 980 329, 850 329" stroke="#7c3aed" stroke-width="2" fill="none" marker-end="url(#arrow-purple)"/>
+  <rect x="900" y="405" width="92" height="25" rx="5" fill="#ffffff" opacity="0.96"/>
+  <text x="946" y="422" text-anchor="middle" font-size="12" font-weight="600" fill="#6d28d9">refine tests</text>
+
+  <rect x="350" y="570" width="500" height="58" rx="9" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="599" r="17" fill="#dbeafe"/>
+  <text x="382" y="605" text-anchor="middle" font-size="17" font-weight="700" fill="#1d4ed8">6</text>
+  <text x="415" y="595" class="node-title">Lock the evaluation plan</text>
+  <text x="415" y="614" class="node-detail">Capabilities, rubric, models and primary comparisons</text>
+
+  <path d="M 600 628 L 600 735" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="100" y="670" width="1000" height="405" rx="14" fill="#f0fdf4" fill-opacity="0.8" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="126" y="700" class="phase" fill="#15803d">CONFIRMATION</text>
+  <text x="275" y="700" class="node-detail">Measure once on fresh cases</text>
+
+  <path d="M 600 793 L 600 825" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M 600 883 L 600 915" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M 600 973 L 600 1005" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)"/>
+
+  <rect x="350" y="735" width="500" height="58" rx="9" fill="#ffffff" stroke="#86efac" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="764" r="17" fill="#dcfce7"/>
+  <text x="382" y="770" text-anchor="middle" font-size="17" font-weight="700" fill="#15803d">7</text>
+  <text x="415" y="760" class="node-title">Generate fresh scenario families</text>
+  <text x="415" y="779" class="node-detail">Use new source material and avoid close paraphrases</text>
+
+  <rect x="350" y="825" width="500" height="58" rx="9" fill="#ffffff" stroke="#86efac" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="854" r="17" fill="#dcfce7"/>
+  <text x="382" y="860" text-anchor="middle" font-size="17" font-weight="700" fill="#15803d">8</text>
+  <text x="415" y="850" class="node-title">Freeze the benchmark</text>
+  <text x="415" y="869" class="node-detail">Stop adapting prompts after results are visible</text>
+
+  <rect x="350" y="915" width="500" height="58" rx="9" fill="#ffffff" stroke="#86efac" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="944" r="17" fill="#dcfce7"/>
+  <text x="382" y="950" text-anchor="middle" font-size="17" font-weight="700" fill="#15803d">9</text>
+  <text x="415" y="940" class="node-title">Run the blind final comparison</text>
+  <text x="415" y="959" class="node-detail">Hide model identity and randomize response order</text>
+
+  <rect x="350" y="1005" width="500" height="58" rx="9" fill="#ffffff" stroke="#4ade80" stroke-width="2" filter="url(#soft-shadow)"/>
+  <circle cx="382" cy="1034" r="17" fill="#dcfce7"/>
+  <text x="382" y="1040" text-anchor="middle" font-size="17" font-weight="700" fill="#15803d">10</text>
+  <text x="415" y="1030" class="node-title">Choose a model or routing policy</text>
+  <text x="415" y="1049" class="node-detail">Compare cost per accepted case and route by scenario</text>
+
+  <rect x="888" y="801" width="180" height="234" rx="9" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="908" y="831" class="note-title">Bias checks</text>
+  <circle cx="910" cy="853" r="4" fill="#16a34a"/>
+  <text x="924" y="858" class="note">Domain realism</text>
+  <circle cx="910" cy="885" r="4" fill="#16a34a"/>
+  <text x="924" y="890" class="note">Fresh sources</text>
+  <circle cx="910" cy="917" r="4" fill="#16a34a"/>
+  <text x="924" y="922" class="note">Independent items</text>
+  <circle cx="910" cy="949" r="4" fill="#16a34a"/>
+  <text x="924" y="954" class="note">Blind review</text>
+  <circle cx="910" cy="981" r="4" fill="#16a34a"/>
+  <text x="924" y="986" class="note">Equal budgets</text>
+  <circle cx="910" cy="1013" r="4" fill="#16a34a"/>
+  <text x="924" y="1018" class="note">Fixed rubric</text>
+
+  <g transform="translate(872, 1110)">
+    <line x1="0" y1="0" x2="32" y2="0" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+    <text x="42" y="4" class="legend">main process</text>
+    <path d="M 142 0 C 157 -12, 177 -12, 192 0" stroke="#7c3aed" stroke-width="2" fill="none" marker-end="url(#arrow-purple)"/>
+    <text x="202" y="4" class="legend">discovery loop</text>
+  </g>
+</svg>
